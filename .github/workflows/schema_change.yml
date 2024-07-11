@@ -17,10 +17,10 @@ jobs:
       - name: Retrieve repository
         uses: actions/checkout@v2
 
-      - name: Use Python 3.10
-        uses: actions/setup-python@v5
+      - name: Use Python 3.8
+        uses: actions/setup-python@v2.2.1
         with:
-          python-version: 3.11
+          python-version: 3.8
 
       - name: Execute schemachange
         env:
