@@ -28,7 +28,7 @@ jobs:
 
       - name: Execute schemachange
         env:
-          SNOWFLAKE_ACCOUNT: "https://app.snowflake.com/nudvuhu/jxb91605/"
+          SNOWFLAKE_ACCOUNT: "app.snowflake.com/nudvuhu/jxb91605/"
           SNOWFLAKE_USERNAME: "atul1140"
           SNOWFLAKE_ROLE: "ACCOUNTADMIN"
           SNOWFLAKE_WAREHOUSE: "DEVELOPER"
