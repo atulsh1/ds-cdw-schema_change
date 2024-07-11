@@ -25,6 +25,7 @@ jobs:
       - name: Install schemachange
         run: |
           pip install schemachange
+          pip install snowflake-connector-python
 
       - name: Execute schemachange
         env:
