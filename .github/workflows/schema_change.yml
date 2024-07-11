@@ -31,17 +31,16 @@ jobs:
           SNOWFLAKE_ACCOUNT: "pbb47117.us-east-1.snowflakecomputing.com"
           SNOWFLAKE_USERNAME: "atul1140"
           SNOWFLAKE_ROLE: "ACCOUNTADMIN"
-          # SNOWFLAKE_WAREHOUSE: "DEVELOPER"
-          # SNOWFLAKE_DATABASE: "RAW"
+          SNOWFLAKE_WAREHOUSE: "DEVELOPER"
+          SNOWFLAKE_DATABASE: "RAW"
           SNOWFLAKE_PASSWORD: 'Bangalore@0000'
-          # CLONE_DB: "your_clone_db" # Replace with your specific clone database
-          # ENV: "your_env" # Replace with your specific environment
+ 
         run: |
           schemachange -f ./migrations/custom \
             -a $SNOWFLAKE_ACCOUNT \
             -u $SNOWFLAKE_USERNAME \
             -r $SNOWFLAKE_ROLE \
-            # -w $SNOWFLAKE_WAREHOUSE \
-            # -d $SNOWFLAKE_DATABASE \
+            -w $SNOWFLAKE_WAREHOUSE \
+            -d $SNOWFLAKE_DATABASE \
             -c $CLONE_DB.SCHEMACHANGE.CHANGE_HISTORY_$ENV \
             --create-change-history-table
