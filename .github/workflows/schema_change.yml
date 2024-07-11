@@ -28,12 +28,12 @@ jobs:
 
       - name: Execute schemachange
         env:
-          SNOWFLAKE_ACCOUNT: "app.snowflake.com/nudvuhu/jxb91605/"
+          SNOWFLAKE_ACCOUNT: "pbb47117.us-east-1.snowflakecomputing.com"
           SNOWFLAKE_USERNAME: "atul1140"
           SNOWFLAKE_ROLE: "ACCOUNTADMIN"
           SNOWFLAKE_WAREHOUSE: "DEVELOPER"
           SNOWFLAKE_DATABASE: "RAW"
-          SNOWFLAKE_PASSWORD: 'Bangalore@0009'
+          SNOWFLAKE_PASSWORD: 'Bangalore@0000'
           # CLONE_DB: "your_clone_db" # Replace with your specific clone database
           # ENV: "your_env" # Replace with your specific environment
         run: |
