@@ -29,7 +29,7 @@ jobs:
           SNOWFLAKE_ROLE: "ACCOUNTADMIN"
           SNOWFLAKE_WAREHOUSE: "DEVELOPER"
           SNOWFLAKE_DATABASE: "RAW"
-          SNOWFLAKE_PASSWORD: 'Bangalore@99001'
+          SNOWFLAKE_PASSWORD: 'Bangalore@0000'
         run: |
           pip install schemachange
           schemachange -f ./migrations/custom  -a $SNOWFLAKE_ACCOUNT -u $SNOWFLAKE_USERNAME -r $SNOWFLAKE_ROLE -w $SNOWFLAKE_WAREHOUSE -d $SNOWFLAKE_DATABASE -c $CLONE_DB.SCHEMACHANGE.CHANGE_HISTORY_$ENV --create-change-history-table
