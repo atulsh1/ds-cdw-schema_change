@@ -41,7 +41,7 @@ jobs:
             -a $SNOWFLAKE_ACCOUNT \
             -u $SNOWFLAKE_USERNAME \
             -r $SNOWFLAKE_ROLE \
-            -w $SNOWFLAKE_WAREHOUSE \
-            -d $SNOWFLAKE_DATABASE \
+            # -w $SNOWFLAKE_WAREHOUSE \
+            # -d $SNOWFLAKE_DATABASE \
             -c $CLONE_DB.SCHEMACHANGE.CHANGE_HISTORY_$ENV \
             --create-change-history-table
