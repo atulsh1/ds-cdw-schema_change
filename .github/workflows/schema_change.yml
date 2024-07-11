@@ -29,7 +29,7 @@ jobs:
 
       - name: Execute schemachange
         env:
-          SNOWFLAKE_ACCOUNT: "https://pbb47117.us-east-1.snowflakecomputing.com"
+          SNOWFLAKE_ACCOUNT: "pbb47117.us-east-1.snowflakecomputing.com"
           SNOWFLAKE_USERNAME: "atul1140"
           SNOWFLAKE_ROLE: "ACCOUNTADMIN"
           SNOWFLAKE_WAREHOUSE: "DEVELOPER"
