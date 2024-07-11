@@ -33,7 +33,7 @@ jobs:
           SNOWFLAKE_USERNAME: "atul1140"
           SNOWFLAKE_ROLE: "ACCOUNTADMIN"
           SNOWFLAKE_WAREHOUSE: "DEVELOPER"
-          SNOWFLAKE_DATABASE: "RAW"
+          SNOWFLAKE_DATABASE: "RAW.GIT"
           SNOWFLAKE_PASSWORD: 'Bangalore@0000'
  
         run: |
