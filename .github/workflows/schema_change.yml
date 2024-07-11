@@ -4,7 +4,7 @@ on:
     branches:
       - dev
     paths:
-      - 'scripts/**'
+      - './migrations/custom'
 
   workflow_dispatch:
 
@@ -27,7 +27,7 @@ jobs:
           SNOWFLAKE_ACCOUNT: "pbb47117.us-east-1.snowflakecomputing.com"
           SNOWFLAKE_USERNAME: "ATUL1140"
           SNOWFLAKE_ROLE: "ACCOUNTADMIN"
-          SNOWFLAKE_WAREHOUSE: "developer"
+          SNOWFLAKE_WAREHOUSE: "DEVELOPER"
           SNOWFLAKE_DATABASE: "RAW"
           SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
         run: |
