@@ -32,4 +32,4 @@ jobs:
           SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
         run: |
           pip install schemachange
-          schemachange -f ./migrations/custom  -a $SF_ACCOUNT -u $SF_USERNAME -r $SF_ROLE -w $SF_WAREHOUSE -d $SF_DATABASE -c $CLONE_DB.SCHEMACHANGE.CHANGE_HISTORY_$ENV --create-change-history-table
+          schemachange -f ./migrations/custom  -a $SNOWFLAKE_ACCOUNT -u $SNOWFLAKE_USERNAME -r $SNOWFLAKE_ROLE -w $SNOWFLAKE_WAREHOUSE -d $SNOWFLAKE_DATABASE -c $CLONE_DB.SCHEMACHANGE.CHANGE_HISTORY_$ENV --create-change-history-table
