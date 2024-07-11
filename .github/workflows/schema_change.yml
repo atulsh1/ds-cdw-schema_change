@@ -25,7 +25,7 @@ jobs:
       - name: Execute schemachange
         env:
           SNOWFLAKE_ACCOUNT: "pbb47117.us-east-1"
-          SNOWFLAKE_USERNAME: "ATUL1140"
+          SNOWFLAKE_USERNAME: "atul1140"
           SNOWFLAKE_ROLE: "ACCOUNTADMIN"
           SNOWFLAKE_WAREHOUSE: "COMPUTE-WH"
           SNOWFLAKE_DATABASE: "PRA_TEST"
