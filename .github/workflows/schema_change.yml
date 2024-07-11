@@ -28,7 +28,7 @@ jobs:
           SNOWFLAKE_USERNAME: "ATUL1140"
           SNOWFLAKE_ROLE: "ACCOUNTADMIN"
           SNOWFLAKE_WAREHOUSE: "DEVELOPER"
-          SNOWFLAKE_DATABASE: "RAW"
+          SNOWFLAKE_DATABASE: "PRA_TEST"
           SNOWFLAKE_PASSWORD: 'Bangalore@0000'
         run: |
           pip install schemachange
