@@ -35,6 +35,7 @@ jobs:
           SNOWFLAKE_WAREHOUSE: "COMPUTE_WH"
           SNOWFLAKE_DATABASE: "PRA_DB"
           SNOWFLAKE_PASSWORD: 'Bangalore@0000'
+          
  
         run: |
           schemachange -f ./migrations/custom \
@@ -43,5 +44,5 @@ jobs:
             -r $SNOWFLAKE_ROLE \
             -w $SNOWFLAKE_WAREHOUSE \
             -d $SNOWFLAKE_DATABASE \
-            -c $CLONE_DB.SCHEMACHANGE.CHANGE_HISTORY_$ENV \
+            -c $SNOWFLAKE_DATABASE.SCHEMACHANGE.CHANGE_HISTORY \
             --create-change-history-table
