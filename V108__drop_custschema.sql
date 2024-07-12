@@ -1,1 +1,0 @@
-drop SCHEMA NW_DBA.EMPLOYEE;

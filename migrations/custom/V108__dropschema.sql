@@ -1,0 +1,1 @@
+drop schema NW_DBA.CUSTOMER_SCHEMA;
