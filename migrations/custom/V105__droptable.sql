@@ -1,0 +1,1 @@
+drop SCHEMA NW_DBA.student;
