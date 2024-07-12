@@ -1,3 +1,3 @@
 
 
-create SCHEMA PRA_DB.student;
+# create SCHEMA PRA_DB.student;
