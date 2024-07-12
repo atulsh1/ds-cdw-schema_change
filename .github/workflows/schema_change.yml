@@ -4,7 +4,7 @@ on:
     branches:
       - dev
     paths:
-      - './migrations/custom/**' # Adjusted to include all files under migrations/custom directory
+      - './migrations/custom/**'
 
   workflow_dispatch:
 
