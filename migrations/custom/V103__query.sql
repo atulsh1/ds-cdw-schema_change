@@ -1,3 +1,3 @@
 
 
-# create SCHEMA PRA_DB.employee;
+create SCHEMA PRA_DB.employee;

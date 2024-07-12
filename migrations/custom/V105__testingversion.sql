@@ -1,3 +1,0 @@
-
-
-# drop SCHEMA PRA_DB.CUSTOMER_SCHEMA;
