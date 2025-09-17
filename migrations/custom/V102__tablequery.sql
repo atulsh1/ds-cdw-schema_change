@@ -7,7 +7,7 @@
 --   NAME VARCHAR,
 --   EMAIL VARCHAR
 -- );
-
+# ----------------
 CREATE TABLE ORDERS (
   ORDER_ID INT PRIMARY KEY,
   CUSTOMER_ID INT,
